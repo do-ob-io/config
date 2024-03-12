@@ -18,7 +18,7 @@ jobs:
       with:
         release-type: node
         token: ${{ secrets.GITHUB_TOKEN }}
-        default-branch: main
+        target-branch: main
 
     - name: Publish
       uses: './.github/workflows/publish.yml'

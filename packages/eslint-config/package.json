@@ -11,9 +11,6 @@
       "require": "./index.cjs"
     }
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "eslint",
     "typescript",

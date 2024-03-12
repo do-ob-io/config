@@ -19,6 +19,8 @@ jobs:
         release-type: node
         token: ${{ secrets.GITHUB_TOKEN }}
         target-branch: main
+        config-file: release-please-config.json
+        manifest-file: release-please-manifest.json
 
     - name: Publish
       uses: './.github/workflows/publish.yml'

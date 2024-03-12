@@ -8,6 +8,16 @@ on:
         description: 'Confirm Manual Publish'
         default: false
         required: true
+      access:
+        type: string
+        description: 'Publish Access'
+        default: 'public'
+        required: false
+      tag:
+        type: string
+        description: 'Publish Tag'
+        default: 'latest'
+        required: false
   
   workflow_call:
     inputs:

@@ -22,5 +22,5 @@ jobs:
         manifest-file: release-please-manifest.json
 
     - name: Publish
-      uses: './.github/workflows/publish.yml'
-      if: ${{ steps.release.outputs.release_created }}
+      uses: ./.github/workflows/publish.yml
+      if: ${{ steps.release.outputs.releases_created }}

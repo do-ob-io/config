@@ -1,0 +1,32 @@
+{
+  "name": "@do-ob/eslint-config",
+  "version": "0.0.0",
+  "description": "Default ESLint configuration for ESM Node.js projects.",
+  "type": "module",
+  "main": "index.cjs",
+  "module": "index.cjs",
+  "exports": {
+    ".": {
+      "import": "./index.cjs",
+      "require": "./index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "typescript",
+    "config",
+    "configuration",
+    "esm"
+  ],
+  "author": "Eric Crowell <eric@do-ob.io> (https://do-ob.io)",
+  "license": "MIT",
+  "dependencies": {
+    "typescript-eslint": "^7.2.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8"
+  }
+}

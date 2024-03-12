@@ -1,0 +1,29 @@
+{
+  "name": "@do-ob/ts-config",
+  "version": "0.0.0",
+  "description": "Default TypeScript configuration for ESM Node.js projects.",
+  "type": "module",
+  "main": "tsconfig.json",
+  "module": "tsconfig.json",
+  "exports": {
+    ".": {
+      "import": "./tsconfig.json",
+      "require": "./tsconfig.json"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "config",
+    "configuration",
+    "esm"
+  ],
+  "author": "Eric Crowell <eric@do-ob.io>",
+  "license": "MIT",
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

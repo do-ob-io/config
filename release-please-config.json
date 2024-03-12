@@ -1,0 +1,6 @@
+{
+    "packages": {
+      "packages/ts-config": {},
+      "packages/eslint-config": {}
+    }
+  }

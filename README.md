@@ -1,2 +1,3 @@
-# config
-Shared configurations for do-ob projects
+# do-ob Configurations
+
+Shared configurations for do-ob projects.

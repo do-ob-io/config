@@ -12,6 +12,8 @@ permissions:
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    outputs:
+      releases_created: ${{ steps.release.outputs.releases_created }}
     steps:
     - uses: google-github-actions/release-please-action@v4
       id: release
@@ -22,5 +24,6 @@ jobs:
         manifest-file: release-please-manifest.json
 
   publish:
-    if: ${{ steps.release.outputs.releases_created == 'true' || steps.release.outputs.releases_created == true }}
+    needs: release-please
+    if: ${{ needs.release-please.outputs.releases_created == 'true' || needs.release.outputs.releases_created == true }}
     uses: do-ob-io/config/.github/workflows/publish.yml@main

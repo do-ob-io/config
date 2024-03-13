@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/do-ob-io/config/compare/ts-config-v1.0.0...ts-config-v1.1.0) (2024-03-13)
+
+
+### Features
+
+* Added individual licenses and readmes to existing packages ([639cfb8](https://github.com/do-ob-io/config/commit/639cfb89d29d6d91216d24d0df2b96f7a7525d67))
+
 ## 1.0.0 (2024-03-12)
 
 

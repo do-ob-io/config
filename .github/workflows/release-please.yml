@@ -23,4 +23,4 @@ jobs:
 
     - name: Publish
       if: ${{ steps.release.outputs.releases_created == 'true' || steps.release.outputs.releases_created == true }}
-      uses: do-ob-io/config@.github/workflows/publish.yml
+      uses: do-ob-io/config/.github/workflows/publish.yml@main

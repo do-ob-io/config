@@ -23,5 +23,5 @@ jobs:
 
     - name: Publish
       # uses: ./.github/workflows/publish.yml
-      if: ${{ steps.release.outputs.releases_created }}
+      if: ${{ steps.release.outputs.releases_created === 'true' || steps.release.outputs.releases_created === true}}
       run: echo "Running the release-please publish step... ${{ steps.release.outputs.releases_created }}"

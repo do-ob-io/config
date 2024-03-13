@@ -21,6 +21,6 @@ jobs:
         config-file: release-please-config.json
         manifest-file: release-please-manifest.json
 
-    - name: Publish
-      if: ${{ steps.release.outputs.releases_created == 'true' || steps.release.outputs.releases_created == true }}
-      uses: do-ob-io/config/.github/workflows/publish.yml@main
+  publish:
+    if: ${{ steps.release.outputs.releases_created == 'true' || steps.release.outputs.releases_created == true }}
+    uses: do-ob-io/config/.github/workflows/publish.yml@main

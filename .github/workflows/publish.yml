@@ -59,7 +59,14 @@ jobs:
     - name: Install NodeJS Dependencies
       run: pnpm install --frozen-lockfile
 
-    - name: Publish Project
+    - name: Publish Project (Dispatched)
+      if: ${{ github.event_name == 'workflow_dispatch' }}
       run: pnpm publish -r --tag ${{ github.event.inputs.tag }} --access ${{ github.event.inputs.access }}
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    - name: Publish Project (Called)
+      if: ${{ github.event_name != 'workflow_dispatch' }}
+      run: pnpm publish -r --tag ${{ inputs.tag }} --access ${{ inputs.access }}
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

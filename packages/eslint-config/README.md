@@ -1,4 +1,11 @@
-### do-ob
+<p align="center">
+  <img
+    width="256"
+    src="https://github.com/do-ob-io/shared/blob/main/do-ob-logo-readme.png?raw=true"
+    alt="do-ob logo"
+  />
+</p>
+
 # TypeScript ESM Configuration
 
 A standard base configuration for linting modern TypeScript ESM projects. Ideal for NodeJS libraries or applications.

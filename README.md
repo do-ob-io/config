@@ -1,4 +1,11 @@
-### do-ob
+<p align="center">
+  <img
+    width="256"
+    src="https://github.com/do-ob-io/shared/blob/main/do-ob-logo-readme.png?raw=true"
+    alt="do-ob logo"
+  />
+</p>
+
 # Configurations
 
 This repository contains sharable base configurations for do-ob projects. All configurations are designed for modern ESM TypeScript projects. Feel free to use these in your own projects as well.

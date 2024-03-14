@@ -1,6 +1,7 @@
 {
     "packages": {
       "packages/ts-config": {},
-      "packages/eslint-config": {}
+      "packages/eslint-config": {},
+      "packages/vite-lib-config": {}
     }
 }

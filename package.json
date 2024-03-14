@@ -4,9 +4,15 @@
   "version": "0.0.0",
   "description": "do-ob workspace for configurations",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm --filter './packages/**' build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.27",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6",
+    "vite-tsconfig-paths": "^4.3.2"
+  }
 }

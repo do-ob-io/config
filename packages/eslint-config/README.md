@@ -8,7 +8,7 @@
 
 # TypeScript ESM Configuration
 
-A standard base configuration for linting modern TypeScript ESM projects. Ideal for NodeJS libraries or applications.
+A standard base configuration for linting modern TypeScript ESM projects in the do-ob organization. Ideal for NodeJS libraries or applications.
 
 ## Installation
 

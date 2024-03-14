@@ -8,7 +8,7 @@
 
 # TypeScript ESM Configuration
 
-A standard base configuration for modern TypeScript ESM projects. Ideal for libraries or applications.
+A standard base configuration for modern TypeScript ESM projects in the do-ob organization. Ideal for libraries or applications.
 
 ## Installation
 

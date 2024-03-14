@@ -1,6 +1,6 @@
 {
   "name": "@do-ob/vite-lib-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Base Vite configuration for building a modern ESM & TypeScript NodeJS library",
   "type": "module",
   "main": "dist/index.cjs",

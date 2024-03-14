@@ -1,5 +1,5 @@
 {
     "packages/ts-config": "1.1.0",
     "packages/eslint-config": "1.1.0",
-    "packages/vite-lib-config": "0.0.0"
+    "packages/vite-lib-config": "1.0.0"
 }

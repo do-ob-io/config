@@ -27,12 +27,20 @@ export interface ViteLibConfigOptions {
      * @default ['es', 'cjs']
      */
     formats?: LibraryFormats[];
+
+    /**
+     * Enables/Disables TypeScript configurations.
+     * 
+     * @default true
+     */
+    typescript?: boolean;
 }
 
 export function viteLibConfig({
     name: argName,
     srcDir = 'src',
     formats = ['es', 'cjs'],
+    typescript = true,
 }: ViteLibConfigOptions = {}) {
     const projectRoot = resolve(process.cwd(), '.');
     const srcRoot = resolve(projectRoot, srcDir);
@@ -83,14 +91,20 @@ export function viteLibConfig({
     .split('/')
     .pop()
     .replace(/(?:^|-)(\w)/g, (_, char) => char.toUpperCase());
+
+    /**
+     * Configure plugins array.
+     */
+    const plugins: Plugin[] = [];
+    if (typescript) {
+        plugins.push(tsconfigPaths() as Plugin);
+    }
     
     /**
      * Return the Vite config object with the plugins and build options.
      */
     return defineConfig({
-        plugins: [
-            tsconfigPaths() as Plugin
-        ],
+        plugins,
         build: {
             target: 'modules',
             lib: {

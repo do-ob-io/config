@@ -8,7 +8,7 @@
 
 # Vite Library Configuration
 
-Base configuration for building a library package with Vite.
+Base configuration for building a NodeJS library package with Vite. This configuration is only for modern ESM TypeScript projects. TypeScript can be toggled off.
 
 ## Installation
 
@@ -67,6 +67,13 @@ export interface ViteLibConfigOptions {
      * @default ['es', 'cjs']
      */
     formats?: LibraryFormats[];
+
+    /**
+     * Enables/Disables TypeScript configurations.
+     * 
+     * @default true
+     */
+    typescript?: boolean;
 }
 ```
 

@@ -2,6 +2,7 @@ import { resolve } from 'node:path';
 import { readdirSync, readFileSync } from 'node:fs';
 import { defineConfig, LibraryFormats, Plugin } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import dts from 'vite-plugin-dts';
 
 export interface ViteLibConfigOptions {
     /**
@@ -24,7 +25,7 @@ export interface ViteLibConfigOptions {
     /**
      * The Vite library formats to build.
      * 
-     * @default ['es', 'cjs']
+     * @default ['es']
      */
     formats?: LibraryFormats[];
 
@@ -39,7 +40,7 @@ export interface ViteLibConfigOptions {
 export function viteLibConfig({
     name: argName,
     srcDir = 'src',
-    formats = ['es', 'cjs'],
+    formats = ['es'],
     typescript = true,
 }: ViteLibConfigOptions = {}) {
     const projectRoot = resolve(process.cwd(), '.');
@@ -98,6 +99,7 @@ export function viteLibConfig({
     const plugins: Plugin[] = [];
     if (typescript) {
         plugins.push(tsconfigPaths() as Plugin);
+        plugins.push(dts({ rollupTypes: true }));
     }
     
     /**

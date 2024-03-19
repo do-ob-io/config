@@ -35,11 +35,5 @@
   },
   "peerDependencies": {
     "vite": "^5"
-  },
-  "resolutions": {
-    "@microsoft/api-extractor": "^7"
-  },
-  "overrides": {
-    "@microsoft/api-extractor": "^7"
   }
 }

@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.0.0...vite-lib-config-v2.0.1) (2024-03-19)
+
+
+### Bug Fixes
+
+* Resolved issue with self-referencing paths not being excluded in the bundle ([535b35d](https://github.com/do-ob-io/config/commit/535b35d9ed8a7fd77f685447d253830e24e1dacf))
+
 ## [2.0.0](https://github.com/do-ob-io/config/compare/vite-lib-config-v1.0.0...vite-lib-config-v2.0.0) (2024-03-19)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.0.1...vite-lib-config-v2.0.2) (2024-03-19)
+
+
+### Bug Fixes
+
+* Fixed warning issue with api extractor version not being up to date with typescript ([42fd274](https://github.com/do-ob-io/config/commit/42fd274b547d79b445cf0337a04a7560f103209a))
+
 ## [2.0.1](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.0.0...vite-lib-config-v2.0.1) (2024-03-19)
 
 

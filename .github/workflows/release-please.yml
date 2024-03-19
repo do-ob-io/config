@@ -25,5 +25,5 @@ jobs:
 
   publish:
     needs: release-please
-    if: ${{ needs.release-please.outputs.releases_created == 'true' || needs.release.outputs.releases_created == true }}
+    if: ${{ needs.release-please.outputs.releases_created == 'true' || needs.release-please.outputs.releases_created == true }}
     uses: do-ob-io/config/.github/workflows/publish.yml@main

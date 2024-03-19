@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.0.2...vite-lib-config-v2.0.3) (2024-03-19)
+
+
+### Bug Fixes
+
+* Added resolutions in addition to overrides ([3fde228](https://github.com/do-ob-io/config/commit/3fde2285eb72a155261c9545b9913e8ea9ff5600))
+
 ## [2.0.2](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.0.1...vite-lib-config-v2.0.2) (2024-03-19)
 
 

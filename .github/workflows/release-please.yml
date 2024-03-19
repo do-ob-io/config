@@ -27,3 +27,4 @@ jobs:
     needs: release-please
     if: ${{ needs.release-please.outputs.releases_created == 'true' || needs.release-please.outputs.releases_created == true }}
     uses: do-ob-io/config/.github/workflows/publish.yml@main
+    secrets: inherit

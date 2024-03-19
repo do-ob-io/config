@@ -36,9 +36,10 @@
   "peerDependencies": {
     "vite": "^5"
   },
+  "resolutions": {
+    "@microsoft/api-extractor": "^7"
+  },
   "overrides": {
-    "vite-plugin-dts": {
-      "@microsoft/api-extractor": "^7"
-    }
+    "@microsoft/api-extractor": "^7"
   }
 }

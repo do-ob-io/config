@@ -73,9 +73,13 @@ export function viteLibConfig({
     const packageJson = JSON.parse(
         readFileSync(resolve(projectRoot, 'package.json'), 'utf-8')
     );
+
     const external = [
         // Ensure any nodejs modules (that starts with "node:" prefix) are not bundled.
         /^node:/,
+        // Ensure any self package references are not bundled.
+        new RegExp(`^${packageJson.name}(\/.*)?$`),
+        // Ensure any dependencies and peerDependencies are not bundled.
         ...Object.keys(packageJson.dependencies || {}).map(
             (key) => new RegExp(`^${key}(\/.*)?$`)
         ),
@@ -94,12 +98,22 @@ export function viteLibConfig({
     .replace(/(?:^|-)(\w)/g, (_, char) => char.toUpperCase());
 
     /**
+     * Uses fs to determine if `tsconfig.build.json` exists in the project root.
+     */
+    const tsconfigBuildExists = readdirSync(projectRoot).includes('tsconfig.build.json');
+
+    /**
      * Configure plugins array.
      */
     const plugins: Plugin[] = [];
     if (typescript) {
         plugins.push(tsconfigPaths() as Plugin);
-        plugins.push(dts({ rollupTypes: true }));
+        plugins.push(dts({
+            root: projectRoot,
+            entryRoot: srcRoot,
+            rollupTypes: true,
+            tsconfigPath: tsconfigBuildExists ? 'tsconfig.build.json' : 'tsconfig.json',
+        }));
     }
     
     /**

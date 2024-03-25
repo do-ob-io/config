@@ -35,6 +35,13 @@ export interface ViteLibConfigOptions {
      * @default true
      */
     typescript?: boolean;
+
+    /**
+     * Override DTS plugin options.
+     * 
+     * @see https://github.com/qmhc/vite-plugin-dts
+     */
+    dts?: Parameters<typeof dts>[0];
 }
 
 export function viteLibConfig({
@@ -42,6 +49,7 @@ export function viteLibConfig({
     srcDir = 'src',
     formats = ['es'],
     typescript = true,
+    dts: dtsOptions = {},
 }: ViteLibConfigOptions = {}) {
     const projectRoot = resolve(process.cwd(), '.');
     const srcRoot = resolve(projectRoot, srcDir);
@@ -113,6 +121,7 @@ export function viteLibConfig({
             entryRoot: srcRoot,
             rollupTypes: true,
             tsconfigPath: tsconfigBuildExists ? 'tsconfig.build.json' : 'tsconfig.json',
+            ...dtsOptions,
         }));
     }
     

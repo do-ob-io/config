@@ -121,6 +121,7 @@ export function viteLibConfig({
             entryRoot: srcRoot,
             rollupTypes: true,
             tsconfigPath: tsconfigBuildExists ? 'tsconfig.build.json' : 'tsconfig.json',
+            pathsToAliases: false,
             ...dtsOptions,
         }));
     }

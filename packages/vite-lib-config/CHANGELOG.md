@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.0.4...vite-lib-config-v2.1.0) (2024-03-25)
+
+
+### Features
+
+* Added option to configure the vite DTS plugin ([1ab7109](https://github.com/do-ob-io/config/commit/1ab7109c6da2cc3e47b079be1785f551a665484b))
+
 ## [2.0.4](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.0.3...vite-lib-config-v2.0.4) (2024-03-19)
 
 

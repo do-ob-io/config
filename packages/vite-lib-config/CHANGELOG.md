@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.1.0...vite-lib-config-v2.1.1) (2024-03-25)
+
+
+### Bug Fixes
+
+* Resolved issue with bundler converting typescript paths to their aliases ([292368f](https://github.com/do-ob-io/config/commit/292368f52144691dad9ad8118e98358271d1ff65))
+
 ## [2.1.0](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.0.4...vite-lib-config-v2.1.0) (2024-03-25)
 
 

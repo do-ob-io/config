@@ -23,11 +23,17 @@ module.exports = {
     },
     overrides: [
         {
-          files: ['**/*.cjs'],
-          env: {
-            es2023: true,
-            node: true,
-          },
+            files: ['**/*.cjs'],
+            env: {
+                es2023: true,
+                node: true,
+            },
+        },
+        {
+            files: ['tailwind.config.js'],
+            rules: {
+                '@typescript-eslint/no-var-requires': 'off',
+            }
         },
       ],
   }

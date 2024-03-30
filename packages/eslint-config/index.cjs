@@ -30,9 +30,10 @@ module.exports = {
             },
         },
         {
-            files: ['tailwind.config.js'],
+            files: ['tailwind.config.{ts,js}', 'postcss.config.{ts,js}'],
             rules: {
                 '@typescript-eslint/no-var-requires': 'off',
+                'no-undef': 'off',
             }
         },
       ],

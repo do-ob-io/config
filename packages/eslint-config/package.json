@@ -1,6 +1,6 @@
 {
   "name": "@do-ob/eslint-config",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Default ESLint configuration for ESM Node.js projects.",
   "type": "module",
   "main": "index.cjs",

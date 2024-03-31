@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/do-ob-io/config/compare/eslint-config-v1.1.0...eslint-config-v1.2.0) (2024-03-31)
+
+
+### Features
+
+* Added special rules for tailwindcss configuration files ([b9c2cab](https://github.com/do-ob-io/config/commit/b9c2cab946e4f4241fba5e66f9ddbea8ccc067ff))
+
+
+### Bug Fixes
+
+* Resolved issue with tailwind and postcss js configuration ([40f3fd9](https://github.com/do-ob-io/config/commit/40f3fd974462dd401e0b1125e4286007285a462b))
+
 ## [1.1.0](https://github.com/do-ob-io/config/compare/eslint-config-v1.0.0...eslint-config-v1.1.0) (2024-03-13)
 
 

@@ -65,7 +65,7 @@ export function viteLibConfig({
      * Filter out any test or spec files from the entry files.
      */
     entryFiles = entryFiles.filter((file) =>
-        /\.(test|spec)\.(ts|tsx)$/.test(file)
+        !/\.(test|spec)\.(ts|tsx)$/.test(file)
     );
 
     /**

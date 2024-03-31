@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.3](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.1.2...vite-lib-config-v2.1.3) (2024-03-31)
+
+
+### Bug Fixes
+
+* Resolved issue with test and spec files not actually being excluded ([d44c45f](https://github.com/do-ob-io/config/commit/d44c45f76577c6617b79fcd94c9e4d83882fb6fc))
+
 ## [2.1.2](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.1.1...vite-lib-config-v2.1.2) (2024-03-31)
 
 

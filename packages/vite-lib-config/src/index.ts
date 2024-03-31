@@ -62,6 +62,13 @@ export function viteLibConfig({
     );
 
     /**
+     * Filter out any test or spec files from the entry files.
+     */
+    const testFiles = entryFiles.filter((file) =>
+        /\.(test|spec)\.(ts|tsx)$/.test(file)
+    );
+
+    /**
      * Generate the entry object for the lib option in the build option
      * with the entry file names (without file extensions) as the keys and
      * the full path to the entry file as the values.

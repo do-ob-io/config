@@ -128,6 +128,7 @@ export function viteLibConfig({
             entryRoot: srcRoot,
             rollupTypes: true,
             tsconfigPath: tsconfigBuildExists ? 'tsconfig.build.json' : 'tsconfig.json',
+            exclude: ['**/*.test.ts', '**/*.test.tsx', '**/*.spec.ts', '**/*.spec.tsx'],
             pathsToAliases: false,
             ...dtsOptions,
         }));

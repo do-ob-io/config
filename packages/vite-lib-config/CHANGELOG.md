@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.1.1...vite-lib-config-v2.1.2) (2024-03-31)
+
+
+### Bug Fixes
+
+* Entry files no longer include test or spec files. ([5549e19](https://github.com/do-ob-io/config/commit/5549e19805b55457f66b0daa3950dbcef1f80f55))
+
 ## [2.1.1](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.1.0...vite-lib-config-v2.1.1) (2024-03-25)
 
 

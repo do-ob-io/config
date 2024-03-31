@@ -57,14 +57,14 @@ export function viteLibConfig({
     /**
      * Find all the entry file names in the srcRoot directory with the .ts or tsx extension
      */
-    const entryFiles = readdirSync(srcRoot).filter((file) =>
+    let entryFiles = readdirSync(srcRoot).filter((file) =>
         /\.(ts|tsx)$/.test(file)
     );
 
     /**
      * Filter out any test or spec files from the entry files.
      */
-    const testFiles = entryFiles.filter((file) =>
+    entryFiles = entryFiles.filter((file) =>
         /\.(test|spec)\.(ts|tsx)$/.test(file)
     );
 

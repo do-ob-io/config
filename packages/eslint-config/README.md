@@ -10,6 +10,8 @@
 
 A standard base configuration for linting modern TypeScript ESM projects in the do-ob organization. Ideal for NodeJS libraries or applications.
 
+:warning: This package is only compatible with ESLint 9.0.0 or higher.
+
 ## Installation
 
 Install the configuration package with NPM or PNPM.
@@ -22,10 +24,12 @@ npm install -D @do-ob/eslint-config
 pnpm add -D @do-ob/eslint-config
 ```
 
-Extend the package's `.eslintrc.{json,js,cjs}`.
+Extend the package's `eslint.config.{js,mjs,cjs}`.
 
-```json
-{
-  "extends": ["@do-ob/eslint-config"]
-}
+```ts
+import doob from '@do-ob/eslint-config';
+
+export default [
+  ...doob.configs.recommended,
+];
 ```

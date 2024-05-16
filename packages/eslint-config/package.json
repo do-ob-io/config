@@ -3,14 +3,22 @@
   "version": "1.2.0",
   "description": "Default ESLint configuration for ESM Node.js projects.",
   "type": "module",
-  "main": "index.cjs",
-  "module": "index.cjs",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=20"
+  },
   "exports": {
     ".": {
-      "import": "./index.cjs",
-      "require": "./index.cjs"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "eslint",
     "typescript",
@@ -20,10 +28,14 @@
   ],
   "author": "Eric Crowell <eric@do-ob.io> (https://do-ob.io)",
   "license": "MIT",
+  "scripts": {
+    "build": "vite build --mode production"
+  },
   "dependencies": {
-    "typescript-eslint": "^7.2.0"
+    "@eslint/js": "^9.2.0",
+    "typescript-eslint": "8.0.0-alpha.13"
   },
   "peerDependencies": {
-    "eslint": "^8"
+    "eslint": "^9"
   }
 }

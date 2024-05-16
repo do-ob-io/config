@@ -10,6 +10,7 @@
       "noUnusedLocals": true,
       "noUnusedParameters": true,
       "allowImportingTsExtensions": true,
-      "allowSyntheticDefaultImports": true
+      "allowSyntheticDefaultImports": true,
+      "noEmit": true,
     }
 }

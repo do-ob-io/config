@@ -25,7 +25,15 @@ export const recommended: Record<string, unknown>[] = [
     }
   },
   {
-    ignores: ['**/node_modules/**', '**/dist/**']
+    ignores: [
+      '**/node_modules/**',
+      '**/storybook-static/**',
+      '**/dist/**',
+      '**/lib/**',
+      '**/build/**',
+      '**/out/**',
+      '**/_*/**',
+    ]
   }
 ];
 

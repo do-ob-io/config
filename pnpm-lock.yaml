@@ -9,13 +9,13 @@ importers:
   .:
     devDependencies:
       '@do-ob/eslint-config':
-        specifier: file:./packages/eslint-config
+        specifier: workspace:*
         version: link:packages/eslint-config
       '@do-ob/ts-config':
-        specifier: file:./packages/ts-config
-        version: file:packages/ts-config(typescript@5.4.5)
+        specifier: workspace:*
+        version: link:packages/ts-config
       '@do-ob/vite-lib-config':
-        specifier: file:./packages/vite-lib-config
+        specifier: workspace:*
         version: link:packages/vite-lib-config
       '@types/eslint':
         specifier: ^8.56.10
@@ -93,11 +93,6 @@ packages:
   '@babel/types@7.24.5':
     resolution: {integrity: sha512-6mQNsaLeXTw0nxYUYu+NSa4Hx4BlF1x1x8/PMFbiR+GBSr+2DkECc69b8hgy2frEodNcvPffeH8YfWd3LI6jhQ==}
     engines: {node: '>=6.9.0'}
-
-  '@do-ob/ts-config@file:packages/ts-config':
-    resolution: {directory: packages/ts-config, type: directory}
-    peerDependencies:
-      typescript: ^5
 
   '@esbuild/aix-ppc64@0.20.2':
     resolution: {integrity: sha512-D+EBOJHXdNZcLJRBkhENNG8Wji2kgc9AZ9KiPr1JuZjsNtyHzrsfLRrY0tk2H2aoFu6RANO1y1iPPUCDYWkb5g==}
@@ -1361,10 +1356,6 @@ snapshots:
       '@babel/helper-string-parser': 7.24.1
       '@babel/helper-validator-identifier': 7.24.5
       to-fast-properties: 2.0.0
-
-  '@do-ob/ts-config@file:packages/ts-config(typescript@5.4.5)':
-    dependencies:
-      typescript: 5.4.5
 
   '@esbuild/aix-ppc64@0.20.2':
     optional: true

@@ -8,7 +8,7 @@ export const recommended: Record<string, unknown>[] = [
   ...(ts.configs.recommended as Record<string, unknown>[]),
 
   {
-    files: ['tailwind.config.{ts,js}', 'postcss.config.{ts,js}'],
+    files: ['**/tailwind.config.{ts,js}', '**/postcss.config.{ts,js}'],
     rules: {
       '@typescript-eslint/no-var-requires': 'off',
       'no-undef': 'off',

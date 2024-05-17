@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/do-ob-io/config/compare/eslint-config-v2.0.0...eslint-config-v2.1.0) (2024-05-17)
+
+
+### Features
+
+* Added additional common eslint ignore paths ([e504217](https://github.com/do-ob-io/config/commit/e504217a43bd9a9038c63a5debd8515d7b6ec9d4))
+
 ## [2.0.0](https://github.com/do-ob-io/config/compare/eslint-config-v1.2.0...eslint-config-v2.0.0) (2024-05-17)
 
 

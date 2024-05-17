@@ -12,9 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@do-ob/eslint-config": "workspace:*",
-    "@do-ob/ts-config": "workspace:*",
-    "@do-ob/vite-lib-config": "workspace:*",
+    "@do-ob/eslint-config": "file:./packages/eslint-config",
+    "@do-ob/ts-config": "file:./packages/ts-config",
+    "@do-ob/vite-lib-config": "file:./packages/vite-lib-config",
     "@types/eslint": "^8.56.10",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.12.12",

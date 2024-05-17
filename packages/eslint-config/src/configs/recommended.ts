@@ -1,22 +1,12 @@
 import js from '@eslint/js';
 import ts from 'typescript-eslint';
+import stylistic from '@stylistic/eslint-plugin';
 
 export const recommended: Record<string, unknown>[] = [
-  {
-    ...js.configs.recommended,
-    files: ['**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs', '**/*.ts', '**/*.tsx'],
-    rules: {
-      ...js.configs.recommended.rules,
-      semi: ['error', 'always'],
-      quotes: ['error', 'single'],
-      indent: ['error', 2],
-      'eol-last': ['error', 'always'],
-    }
-  },
-  ...ts.configs.recommended.map((config) => ({
-    ...config,
-    files: ['**/*.ts', '**/*.tsx'],
-  })),
+  js.configs.recommended,
+
+  ...(ts.configs.recommended as Record<string, unknown>[]),
+
   {
     files: ['tailwind.config.{ts,js}', 'postcss.config.{ts,js}'],
     rules: {
@@ -24,6 +14,20 @@ export const recommended: Record<string, unknown>[] = [
       'no-undef': 'off',
     }
   },
+
+  {
+    plugins: {
+      '@stylistic': stylistic,
+    },
+    files: ['**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs', '**/*.ts', '**/*.tsx'],
+    rules: {
+      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/indent': ['error', 2],
+      '@stylistic/eol-last': ['error', 'always'],
+    }
+  },
+
   {
     ignores: [
       '**/node_modules/**',

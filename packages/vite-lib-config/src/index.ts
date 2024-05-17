@@ -5,50 +5,49 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import dts from 'vite-plugin-dts';
 
 interface PackageJSON {
-    name: string;
-    dependencies?: Record<string, string>;
-    peerDependencies?: Record<string, string>;
-
+  name: string;
+  dependencies?: Record<string, string>;
+  peerDependencies?: Record<string, string>;
 }
 
 export interface ViteLibConfigOptions {
-    /**
-     * Custom library name.
-     * 
-     * By default, library name is generated from the package name.
-     */
-    name?: string;
+  /**
+   * Custom library name.
+   * 
+   * By default, library name is generated from the package name.
+   */
+  name?: string;
 
-    /**
-     * The directory where the entry-point source files
-     * (at the root of the directory tree) are located.
-     * 
-     * These are the entry files where you export your public API.
-     * 
-     * @default 'src'
-     */
-    srcDir?: string;
+  /**
+   * The directory where the entry-point source files
+   * (at the root of the directory tree) are located.
+   * 
+   * These are the entry files where you export your public API.
+   * 
+   * @default 'src'
+   */
+  srcDir?: string;
 
-    /**
-     * The Vite library formats to build.
-     * 
-     * @default ['es']
-     */
-    formats?: LibraryFormats[];
+  /**
+   * The Vite library formats to build.
+   * 
+   * @default ['es']
+   */
+  formats?: LibraryFormats[];
 
-    /**
-     * Enables/Disables TypeScript configurations.
-     * 
-     * @default true
-     */
-    typescript?: boolean;
+  /**
+   * Enables/Disables TypeScript configurations.
+   * 
+   * @default true
+   */
+  typescript?: boolean;
 
-    /**
-     * Override DTS plugin options.
-     * 
-     * @see https://github.com/qmhc/vite-plugin-dts
-     */
-    dts?: Parameters<typeof dts>[0];
+  /**
+   * Override DTS plugin options.
+   * 
+   * @see https://github.com/qmhc/vite-plugin-dts
+   */
+  dts?: Parameters<typeof dts>[0];
 }
 
 export function viteLibConfig({
@@ -62,24 +61,24 @@ export function viteLibConfig({
   const srcRoot = resolve(projectRoot, srcDir);
 
   /**
-     * Find all the entry file names in the srcRoot directory with the .ts or tsx extension
-     */
+   * Find all the entry file names in the srcRoot directory with the .ts or tsx extension
+   */
   let entryFiles: string[] = readdirSync(srcRoot).filter((file) =>
     /\.(ts|tsx)$/.test(file)
   );
 
   /**
-     * Filter out any test or spec files from the entry files.
-     */
+   * Filter out any test or spec files from the entry files.
+   */
   entryFiles = entryFiles.filter((file) =>
     !/\.(test|spec)\.(ts|tsx)$/.test(file)
   );
 
   /**
-     * Generate the entry object for the lib option in the build option
-     * with the entry file names (without file extensions) as the keys and
-     * the full path to the entry file as the values.
-     */
+   * Generate the entry object for the lib option in the build option
+   * with the entry file names (without file extensions) as the keys and
+   * the full path to the entry file as the values.
+   */
   const entry = entryFiles.reduce((acc, file) => {
     const key = file.replace(/\.(ts|tsx)$/, '');
     acc[key] = resolve(srcRoot, file);
@@ -121,7 +120,6 @@ export function viteLibConfig({
     const parts = name.split('/');
     name = parts[parts.length - 1] ?? 'unnamed';
   }
-    
 
   /**
      * Uses fs to determine if `tsconfig.build.json` exists in the project root.

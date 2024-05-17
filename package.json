@@ -6,7 +6,8 @@
   "scripts": {
     "build": "pnpm pnpm build:vite-lib-config && pnpm build:eslint-config",
     "build:vite-lib-config": "pnpm --filter './packages/vite-lib-config' build",
-    "build:eslint-config": "pnpm --filter './packages/eslint-config' build"
+    "build:eslint-config": "pnpm --filter './packages/eslint-config' build",
+    "lint": "eslint ./packages/vite-lib-config"
   },
   "keywords": [],
   "author": "",

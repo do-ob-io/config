@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.0](https://github.com/do-ob-io/config/compare/eslint-config-v1.2.0...eslint-config-v2.0.0) (2024-05-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Packages can only be imported as ES6+ modules
+* Updated configuration to be compatible with eslint v9
+
+### Features
+
+* Packages can only be imported as ES6+ modules ([552a472](https://github.com/do-ob-io/config/commit/552a472cc889ff6437e77ddfefaaf8ad1612df31))
+* Updated configuration to be compatible with eslint v9 ([2681a0a](https://github.com/do-ob-io/config/commit/2681a0a7eb69f8d47d4d7dbdec3344bb52a1e95d))
+
 ## [1.2.0](https://github.com/do-ob-io/config/compare/eslint-config-v1.1.0...eslint-config-v1.2.0) (2024-03-31)
 
 

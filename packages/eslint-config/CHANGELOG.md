@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/do-ob-io/config/compare/eslint-config-v2.1.0...eslint-config-v2.1.1) (2024-05-17)
+
+
+### Bug Fixes
+
+* Styling issues with eslint-config by importing stylistic ([2379160](https://github.com/do-ob-io/config/commit/23791608aec3064c212bf872a05530e678bb664a))
+
 ## [2.1.0](https://github.com/do-ob-io/config/compare/eslint-config-v2.0.0...eslint-config-v2.1.0) (2024-05-17)
 
 

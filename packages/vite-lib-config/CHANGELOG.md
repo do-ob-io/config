@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/do-ob-io/config/compare/vite-lib-config-v3.0.0...vite-lib-config-v3.0.1) (2024-05-17)
+
+
+### Bug Fixes
+
+* Styling issues with eslint-config by importing stylistic ([2379160](https://github.com/do-ob-io/config/commit/23791608aec3064c212bf872a05530e678bb664a))
+
 ## [3.0.0](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.1.3...vite-lib-config-v3.0.0) (2024-05-17)
 
 

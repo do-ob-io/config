@@ -1,5 +1,22 @@
 # Changelog
 
+## [3.0.0](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.1.3...vite-lib-config-v3.0.0) (2024-05-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Packages can only be imported as ES6+ modules
+
+### Features
+
+* Packages can only be imported as ES6+ modules ([552a472](https://github.com/do-ob-io/config/commit/552a472cc889ff6437e77ddfefaaf8ad1612df31))
+
+
+### Bug Fixes
+
+* Excluded tests and spec files from declaration build ([911d4ed](https://github.com/do-ob-io/config/commit/911d4ed4d89ccde85b9d5ad01dd98ffe75c19865))
+* The vite config can now properly read and name unscoped packages ([88dbebd](https://github.com/do-ob-io/config/commit/88dbebd3c3d87b89a8d4a1383b19c17d1a1942bb))
+
 ## [2.1.3](https://github.com/do-ob-io/config/compare/vite-lib-config-v2.1.2...vite-lib-config-v2.1.3) (2024-03-31)
 
 

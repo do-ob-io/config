@@ -59,7 +59,7 @@ jobs:
     - name: Install NodeJS Dependencies
       run: pnpm install --frozen-lockfile
 
-    - name: Build Project
+    - name: Build Projects
       run: pnpm build
 
     - name: Publish Project (Dispatched)

@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/do-ob-io/config/compare/eslint-config-v2.1.1...eslint-config-v2.1.2) (2024-05-17)
+
+
+### Bug Fixes
+
+* Resolved rules for tailwind configs ([a1b6b28](https://github.com/do-ob-io/config/commit/a1b6b28bf22d23bb58db42f76ed0d8eb1f06fdd0))
+
 ## [2.1.1](https://github.com/do-ob-io/config/compare/eslint-config-v2.1.0...eslint-config-v2.1.1) (2024-05-17)
 
 

@@ -34,7 +34,7 @@ export const recommended: Record<string, unknown>[] = [
   },
 
   {
-    files: [ '*.ts', '*.js' ],
+    files: [ '*.js' ],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',

@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/do-ob-io/config/compare/eslint-config-v2.1.2...eslint-config-v2.2.0) (2024-05-31)
+
+
+### Features
+
+* Added globals to ts and js files ([04296c9](https://github.com/do-ob-io/config/commit/04296c93dec7097fbde88449d6413b250e0095e9))
+
 ## [2.1.2](https://github.com/do-ob-io/config/compare/eslint-config-v2.1.1...eslint-config-v2.1.2) (2024-05-17)
 
 

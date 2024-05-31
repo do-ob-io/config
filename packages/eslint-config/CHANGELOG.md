@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/do-ob-io/config/compare/eslint-config-v2.2.0...eslint-config-v2.2.1) (2024-05-31)
+
+
+### Bug Fixes
+
+* globals now only impact js files ([75fe137](https://github.com/do-ob-io/config/commit/75fe137cedcdd00ae82093fa12266944256ce393))
+
 ## [2.2.0](https://github.com/do-ob-io/config/compare/eslint-config-v2.1.2...eslint-config-v2.2.0) (2024-05-31)
 
 

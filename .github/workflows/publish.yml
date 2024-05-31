@@ -51,7 +51,7 @@ jobs:
     - name: Setup NodeJS with PNPM Caching
       uses: actions/setup-node@v3
       with:
-        node-version: 'lts'
+        node-version: 'latest'
         registry-url: 'https://registry.npmjs.org'
         scope: '@do-ob'
         cache: 'pnpm'

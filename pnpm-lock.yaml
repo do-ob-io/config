@@ -59,6 +59,9 @@ importers:
       eslint:
         specifier: ^9
         version: 9.2.0
+      globals:
+        specifier: ^15.3.0
+        version: 15.3.0
       typescript-eslint:
         specifier: 8.0.0-alpha.13
         version: 8.0.0-alpha.13(eslint@9.2.0)(typescript@5.4.5)

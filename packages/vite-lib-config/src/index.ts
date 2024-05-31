@@ -53,7 +53,7 @@ export interface ViteLibConfigOptions {
 export function viteLibConfig({
   name: argName,
   srcDir = 'src',
-  formats = ['es'],
+  formats = [ 'es' ],
   typescript = true,
   dts: dtsOptions = {},
 }: ViteLibConfigOptions = {}) {
@@ -137,7 +137,7 @@ export function viteLibConfig({
       entryRoot: srcRoot,
       rollupTypes: true,
       tsconfigPath: tsconfigBuildExists ? 'tsconfig.build.json' : 'tsconfig.json',
-      exclude: ['**/*.test.ts', '**/*.test.tsx', '**/*.spec.ts', '**/*.spec.tsx'],
+      exclude: [ '**/*.test.ts', '**/*.test.tsx', '**/*.spec.ts', '**/*.spec.tsx' ],
       pathsToAliases: false,
       ...dtsOptions,
     }));

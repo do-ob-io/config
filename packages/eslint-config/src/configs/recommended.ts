@@ -9,7 +9,7 @@ export const recommended: Record<string, unknown>[] = [
   ...(ts.configs.recommended as Record<string, unknown>[]),
 
   {
-    files: ['**/tailwind.config.{ts,js}', '**/postcss.config.{ts,js}'],
+    files: [ '**/tailwind.config.{ts,js}', '**/postcss.config.{ts,js}' ],
     rules: {
       '@typescript-eslint/no-var-requires': 'off',
       'no-undef': 'off',
@@ -20,21 +20,21 @@ export const recommended: Record<string, unknown>[] = [
     plugins: {
       '@stylistic': stylistic,
     },
-    files: ['**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs', '**/*.ts', '**/*.tsx'],
+    files: [ '**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs', '**/*.ts', '**/*.tsx' ],
     rules: {
-      '@stylistic/semi': ['error', 'always'],
-      '@stylistic/quotes': ['error', 'single'],
-      '@stylistic/indent': ['error', 2],
-      '@stylistic/eol-last': ['error', 'always'],
-      '@stylistic/comma-dangle': ['error', 'only-multiline'],
-      '@stylistic/object-curly-spacing': ['error', 'always'],
-      '@stylistic/array-bracket-spacing': ['error', 'always'],
-      '@stylistic/jsx-quotes': ['error', 'prefer-double'],
+      '@stylistic/semi': [ 'error', 'always' ],
+      '@stylistic/quotes': [ 'error', 'single' ],
+      '@stylistic/indent': [ 'error', 2 ],
+      '@stylistic/eol-last': [ 'error', 'always' ],
+      '@stylistic/comma-dangle': [ 'error', 'only-multiline' ],
+      '@stylistic/object-curly-spacing': [ 'error', 'always' ],
+      '@stylistic/array-bracket-spacing': [ 'error', 'always' ],
+      '@stylistic/jsx-quotes': [ 'error', 'prefer-double' ],
     }
   },
 
   {
-    files: ['*.ts', '*.js'],
+    files: [ '*.ts', '*.js' ],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -46,7 +46,7 @@ export const recommended: Record<string, unknown>[] = [
   },
 
   {
-    files: ['*.cjs'],
+    files: [ '*.cjs' ],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'script',
@@ -65,6 +65,7 @@ export const recommended: Record<string, unknown>[] = [
       '**/build/**',
       '**/out/**',
       '**/_*/**',
+      '**/.next/**',
     ]
   }
 ];

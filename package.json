@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@do-ob/eslint-config": "workspace:*",
     "@do-ob/ts-config": "workspace:*",
@@ -20,6 +20,7 @@
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.12.12",
     "eslint": "^9.2.0",
+    "globals": "^15.3.0",
     "typescript": "^5.4.5",
     "vite": "^5.2.11",
     "vite-plugin-dts": "^3.9.1",

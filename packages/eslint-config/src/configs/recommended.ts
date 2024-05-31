@@ -1,6 +1,7 @@
 import js from '@eslint/js';
 import ts from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
+import globals from 'globals';
 
 export const recommended: Record<string, unknown>[] = [
   js.configs.recommended,
@@ -25,6 +26,33 @@ export const recommended: Record<string, unknown>[] = [
       '@stylistic/quotes': ['error', 'single'],
       '@stylistic/indent': ['error', 2],
       '@stylistic/eol-last': ['error', 'always'],
+      '@stylistic/comma-dangle': ['error', 'only-multiline'],
+      '@stylistic/object-curly-spacing': ['error', 'always'],
+      '@stylistic/array-bracket-spacing': ['error', 'always'],
+      '@stylistic/jsx-quotes': ['error', 'prefer-double'],
+    }
+  },
+
+  {
+    files: ['*.ts', '*.js'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        ...globals.node,
+        ...globals.es2021,
+      }
+    }
+  },
+
+  {
+    files: ['*.cjs'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'script',
+      globals: {
+        ...globals.node,
+      }
     }
   },
 

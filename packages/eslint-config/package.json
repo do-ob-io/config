@@ -30,6 +30,7 @@
   "dependencies": {
     "@eslint/js": "^9.2.0",
     "@stylistic/eslint-plugin": "^2.1.0",
+    "globals": "^15.3.0",
     "typescript-eslint": "8.0.0-alpha.13"
   },
   "peerDependencies": {

@@ -1,6 +1,7 @@
 import js from '@eslint/js';
 import ts from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
+import tailwind from 'eslint-plugin-tailwindcss';
 import globals from 'globals';
 
 export const recommended: Record<string, unknown>[] = [
@@ -55,6 +56,8 @@ export const recommended: Record<string, unknown>[] = [
       }
     }
   },
+
+  ...tailwind.configs['flat/recommended'],
 
   {
     ignores: [

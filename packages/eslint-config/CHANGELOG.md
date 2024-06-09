@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/do-ob-io/config/compare/eslint-config-v2.2.1...eslint-config-v2.3.0) (2024-06-09)
+
+
+### Features
+
+* Added tailwind eslinting to recommended configurations ([800fe91](https://github.com/do-ob-io/config/commit/800fe91b0065978e09ab560597c31ecb2a3d7dab))
+
 ## [2.2.1](https://github.com/do-ob-io/config/compare/eslint-config-v2.2.0...eslint-config-v2.2.1) (2024-05-31)
 
 

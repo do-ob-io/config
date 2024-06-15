@@ -2,6 +2,7 @@ import js from '@eslint/js';
 import ts from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 import tailwind from 'eslint-plugin-tailwindcss';
+import reactCompiler from 'eslint-plugin-react-compiler';
 import globals from 'globals';
 
 export const recommended: Record<string, unknown>[] = [
@@ -57,8 +58,27 @@ export const recommended: Record<string, unknown>[] = [
     }
   },
 
+  /**
+   * Tailwind CSS
+   */
   ...tailwind.configs['flat/recommended'],
 
+  /**
+   * React Compiler
+   */
+  {
+    plugins: {
+      'react-compiler': reactCompiler,
+    },
+    rules: {
+      ...reactCompiler.rules.recommended,
+      'react-compiler/react-compiler': 'error',
+    },
+  },
+
+  /**
+   * Ignore some common artifact directories
+   */
   {
     ignores: [
       '**/node_modules/**',

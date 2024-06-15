@@ -7,7 +7,8 @@
     "build": "pnpm pnpm build:vite-lib-config && pnpm build:eslint-config",
     "build:vite-lib-config": "pnpm --filter './packages/vite-lib-config' build",
     "build:eslint-config": "pnpm --filter './packages/eslint-config' build",
-    "lint": "eslint ./packages/vite-lib-config"
+    "lint": "eslint ./packages/vite-lib-config",
+    "test": "echo \"Info: no tests specified\""
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.12.12",
     "eslint": "^9.2.0",
+    "eslint-plugin-react-compiler": "0.0.0-experimental-51a85ea-20240601",
     "eslint-plugin-tailwindcss": "^3.17.3",
     "globals": "^15.3.0",
     "typescript": "^5.4.5",

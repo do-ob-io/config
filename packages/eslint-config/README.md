@@ -33,3 +33,28 @@ export default [
   ...doob.configs.recommended,
 ];
 ```
+
+## Includes the Following Recommended Configuration Packages
+
+| Package | GitHub Repository |
+|---------|------------------|
+| `@eslint/js` | [eslint/eslint](https://github.com/eslint/eslint) |
+| `typescript-eslint` | [typescript-eslint/typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) |
+| `eslint-plugin-tailwindcss` | [francoismassart/eslint-plugin-tailwindcss](https://github.com/francoismassart/eslint-plugin-tailwindcss) |
+| `eslint-plugin-react-compiler` | [facebook/react](https://github.com/facebook/react/tree/main/compiler/packages/eslint-plugin-react-compiler) |
+
+Feel free to explore the repositories for more information and documentation.
+
+
+## Ignored Directories
+
+The configuration package ignores the following directories by default:
+
+- `node_modules`
+- `storybook-static`
+- `dist`
+- `lib`
+- `build`
+- `out`
+- `_`
+- `.next`

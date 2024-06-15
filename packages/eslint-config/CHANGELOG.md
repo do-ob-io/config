@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://github.com/do-ob-io/config/compare/eslint-config-v2.3.0...eslint-config-v2.4.0) (2024-06-15)
+
+
+### Features
+
+* Added react compiler eslinting rules ([74256ec](https://github.com/do-ob-io/config/commit/74256ecf4d50f6f4ffc454361ce5ff8b7e172c36))
+
 ## [2.3.0](https://github.com/do-ob-io/config/compare/eslint-config-v2.2.1...eslint-config-v2.3.0) (2024-06-09)
 
 

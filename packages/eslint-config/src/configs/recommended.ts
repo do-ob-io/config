@@ -87,6 +87,8 @@ export const recommended: Record<string, unknown>[] = [
 
   /**
    * React Plugins
+   * 
+   * Includes: React, React Hooks, React Compiler
    */
   {
     files: [ '**/*.{jsx,tsx}' ],

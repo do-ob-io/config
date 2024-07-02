@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/do-ob-io/config/compare/eslint-config-v2.4.0...eslint-config-v2.5.0) (2024-07-02)
+
+
+### Features
+
+* Added react configurations ([#27](https://github.com/do-ob-io/config/issues/27)) ([8402c34](https://github.com/do-ob-io/config/commit/8402c3457377349ac2921880d8d1f0373c7b5f91))
+
 ## [2.4.0](https://github.com/do-ob-io/config/compare/eslint-config-v2.3.0...eslint-config-v2.4.0) (2024-06-15)
 
 

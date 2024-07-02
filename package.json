@@ -17,11 +17,14 @@
     "@do-ob/eslint-config": "workspace:*",
     "@do-ob/ts-config": "workspace:*",
     "@do-ob/vite-lib-config": "workspace:*",
+    "@eslint/compat": "^1.1.0",
     "@types/eslint": "^8.56.10",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.12.12",
     "eslint": "^9.2.0",
+    "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-compiler": "0.0.0-experimental-51a85ea-20240601",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-tailwindcss": "^3.17.3",
     "globals": "^15.3.0",
     "typescript": "^5.4.5",
@@ -29,5 +32,6 @@
     "vite-plugin-dts": "^3.9.1",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^1.6.0"
-  }
+  },
+  "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771"
 }

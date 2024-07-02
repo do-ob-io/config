@@ -2,7 +2,10 @@ import js from '@eslint/js';
 import ts from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 import tailwind from 'eslint-plugin-tailwindcss';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
 import reactCompiler from 'eslint-plugin-react-compiler';
+import { fixupPluginRules } from '@eslint/compat';
 import globals from 'globals';
 
 export const recommended: Record<string, unknown>[] = [
@@ -14,6 +17,18 @@ export const recommended: Record<string, unknown>[] = [
     files: [ '**/tailwind.config.{ts,js}', '**/postcss.config.{ts,js}' ],
     rules: {
       '@typescript-eslint/no-var-requires': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          'args': 'all',
+          'argsIgnorePattern': '^_',
+          'caughtErrors': 'all',
+          'caughtErrorsIgnorePattern': '^_',
+          'destructuredArrayIgnorePattern': '^_',
+          'varsIgnorePattern': '^_',
+          'ignoreRestSiblings': true
+        }
+      ],
       'no-undef': 'off',
     }
   },
@@ -62,16 +77,47 @@ export const recommended: Record<string, unknown>[] = [
    * Tailwind CSS
    */
   ...tailwind.configs['flat/recommended'],
+  {
+    settings: {
+      tailwindcss: {
+        callees: [ 'classnames', 'clsx', 'ctl', 'cn', 'twMerge' ],
+      }
+    }
+  },
 
   /**
-   * React Compiler
+   * React Plugins
    */
   {
+    files: [ '**/*.{jsx,tsx}' ],
     plugins: {
-      'react-compiler': reactCompiler,
+      'react': fixupPluginRules(react),
+    },
+    languageOptions: {
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
     },
     rules: {
-      ...reactCompiler.rules.recommended,
+      ...react.configs?.recommended.rules,
+      'react/react-in-jsx-scope': 'off',
+    },
+  },
+  {
+    plugins: {
+      'react-hooks': fixupPluginRules(reactHooks),
+    },
+    rules: {
+      ...reactHooks.configs?.recommended.rules,
+    },
+  },
+  {
+    plugins: {
+      'react-compiler': fixupPluginRules(reactCompiler),
+    },
+    rules: {
       'react-compiler/react-compiler': 'error',
     },
   },

@@ -4,7 +4,7 @@ import stylistic from '@stylistic/eslint-plugin';
 import tailwind from 'eslint-plugin-tailwindcss';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
-import reactCompiler, { rules } from 'eslint-plugin-react-compiler';
+import reactCompiler from 'eslint-plugin-react-compiler';
 import { fixupPluginRules } from '@eslint/compat';
 import globals from 'globals';
 

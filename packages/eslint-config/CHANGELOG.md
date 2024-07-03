@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.5.1](https://github.com/do-ob-io/config/compare/eslint-config-v2.5.0...eslint-config-v2.5.1) (2024-07-03)
+
+
+### Bug Fixes
+
+* no-unused-vars eslint rule has been moved to a global rule set. ([d086f5a](https://github.com/do-ob-io/config/commit/d086f5acd58ac38b51299634c1ed78e17163e739))
+* Removed unused import ([#31](https://github.com/do-ob-io/config/issues/31)) ([1a944b9](https://github.com/do-ob-io/config/commit/1a944b9f28b3e8ef12b1871821f903d145c28856))
+
 ## [2.5.0](https://github.com/do-ob-io/config/compare/eslint-config-v2.4.0...eslint-config-v2.5.0) (2024-07-02)
 
 

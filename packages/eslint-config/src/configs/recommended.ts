@@ -4,7 +4,7 @@ import stylistic from '@stylistic/eslint-plugin';
 import tailwind from 'eslint-plugin-tailwindcss';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
-import reactCompiler from 'eslint-plugin-react-compiler';
+import reactCompiler, { rules } from 'eslint-plugin-react-compiler';
 import { fixupPluginRules } from '@eslint/compat';
 import globals from 'globals';
 
@@ -17,6 +17,12 @@ export const recommended: Record<string, unknown>[] = [
     files: [ '**/tailwind.config.{ts,js}', '**/postcss.config.{ts,js}' ],
     rules: {
       '@typescript-eslint/no-var-requires': 'off',
+      'no-undef': 'off',
+    }
+  },
+
+  {
+    rules: {
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
@@ -29,7 +35,6 @@ export const recommended: Record<string, unknown>[] = [
           'ignoreRestSiblings': true
         }
       ],
-      'no-undef': 'off',
     }
   },
 

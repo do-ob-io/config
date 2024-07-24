@@ -44,6 +44,7 @@ export const recommended: Record<string, unknown>[] = [
     },
     files: [ '**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs', '**/*.ts', '**/*.tsx' ],
     rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
       '@stylistic/semi': [ 'error', 'always' ],
       '@stylistic/quotes': [ 'error', 'single' ],
       '@stylistic/indent': [ 'error', 2 ],

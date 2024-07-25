@@ -135,7 +135,7 @@ export function viteLibConfig({
     plugins.push(dts({
       root: projectRoot,
       entryRoot: srcRoot,
-      rollupTypes: true,
+      rollupTypes: false,
       tsconfigPath: tsconfigBuildExists ? 'tsconfig.build.json' : 'tsconfig.json',
       exclude: [ '**/*.test.ts', '**/*.test.tsx', '**/*.spec.ts', '**/*.spec.tsx' ],
       pathsToAliases: false,

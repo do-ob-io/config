@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://github.com/do-ob-io/config/compare/vite-lib-config-v3.0.1...vite-lib-config-v3.1.0) (2024-07-25)
+
+
+### Features
+
+* RollupTypes is now disabled by default ([65e2324](https://github.com/do-ob-io/config/commit/65e2324598e64f2b4442a18d8f9cb01ed1d8cf87))
+
 ## [3.0.1](https://github.com/do-ob-io/config/compare/vite-lib-config-v3.0.0...vite-lib-config-v3.0.1) (2024-05-17)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.0](https://github.com/do-ob-io/config/compare/eslint-config-v2.5.1...eslint-config-v2.6.0) (2024-07-25)
+
+
+### Features
+
+* Turned off linting rule for explicit any ([c4bf319](https://github.com/do-ob-io/config/commit/c4bf3192cdabc2b1085db4c1abd646ce0cd8db8c))
+
 ## [2.5.1](https://github.com/do-ob-io/config/compare/eslint-config-v2.5.0...eslint-config-v2.5.1) (2024-07-03)
 
 
